@@ -5,7 +5,7 @@ import { bxAnaalyse } from '@/core/icons'
 export const asyncRouterMap = [
 
   {
-    path: '/',
+    path: '/index',
     name: 'index',
     component: BasicLayout,
     meta: { title: '首页' },
@@ -321,6 +321,12 @@ export const asyncRouterMap = [
   },
   {
     path: '*', redirect: '/404', hidden: true
+  },
+  {
+    path: '/',
+    name: 'web',
+    component: () => import(/* webpackChunkName: "user" */ '@/views/web/Index')
+
   }
 ]
 
