@@ -1,20 +1,22 @@
 <template>
-<div>22222222212</div>
+  <div class="wrapper">
+<webheader/>
+  </div>
 </template>
-
 <script>
-export default {
-
-  data () {
-    return {
-
-    }
-  },
-  mounted () {
-
+import webheader from '@/components/Header/Header'
+  export default {
+    components: {webheader},
+    data() {
+      return {
+     
+      }
+    },
+  
   }
-}
 </script>
 <style>
-
+.skeleton-demo {
+  border: 1px solid #f4f4f4;
+}
 </style>
